@@ -20,7 +20,7 @@ onload(function() {
             var callback = export_btn.getAttribute("data-callback");
             port.postMessage({"do": "get_cookie", "site": site, "name": name, "domain": domain});
             port.onMessage.addListener(function(msg) {
-                if (window.confirm('你确定要此网站获取你' + site + '的Cookies么？')) {
+                if (window.confirm('你确定要此网站获取' + site + '的Cookies么？')) {
                     export_btn.setAttribute("data-cookie", JSON.stringify(msg));
                     window.postMessage(msg, "*");
                 } else {
