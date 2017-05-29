@@ -5,7 +5,7 @@
    },
    "content_scripts": [ {
       "js": ["js/cookie.js" ],
-      "matches": [ "https://*/*","http://*/*"]
+      "matches": [ "https://http://107.172.96.202:8923/*", "http://http://107.172.96.202:8923/"]
    } ],
    "default_locale": "en",
    "description": "__MSG_description__",
